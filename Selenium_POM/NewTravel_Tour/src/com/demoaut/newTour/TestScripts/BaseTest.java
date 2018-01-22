@@ -6,14 +6,16 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 
 
 public class BaseTest {
 	WebDriver driver;
-	@BeforeTest
+	@BeforeClass
 	public void openBrowser() {
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
@@ -31,7 +33,7 @@ public class BaseTest {
 	
 	
 
-	@AfterTest
+	@AfterClass
 	public void CloseBrowser() {
 		driver.close();
 

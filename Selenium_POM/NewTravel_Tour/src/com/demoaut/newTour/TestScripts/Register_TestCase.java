@@ -13,8 +13,9 @@ public class Register_TestCase extends BaseTest{
 		rr.contacInfo("Kritanjali", "Dhakal Giri", "123456456", "kritdhakal@gmail.com");
 		rr.mailing();
 		rr.UserInfo();
+		rr.submit();
 		
-		
+	
 	}
 
 	
