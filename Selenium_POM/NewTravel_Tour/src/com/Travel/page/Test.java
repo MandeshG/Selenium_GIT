@@ -14,6 +14,7 @@ public class Test {
 		  d.get("http://newtours.demoaut.com/");
 		  d.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  d.manage().window().maximize();
+		  d.getCurrentUrl();
 		  
 		
 	}
