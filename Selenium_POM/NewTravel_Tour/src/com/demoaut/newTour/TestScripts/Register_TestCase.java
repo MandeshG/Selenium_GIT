@@ -15,6 +15,7 @@ public class Register_TestCase extends BaseTest{
 		rr.UserInfo();
 		rr.submit();
 		
+		
 	
 	}
 
