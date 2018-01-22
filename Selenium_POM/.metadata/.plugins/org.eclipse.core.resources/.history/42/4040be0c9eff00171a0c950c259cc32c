@@ -1,0 +1,11 @@
+package com.demoaut.newTour.TestScripts;
+
+
+
+import com.demount.newtour.Page.*;
+
+public class Register_TestCase extends BaseTest{
+	
+	
+	
+}

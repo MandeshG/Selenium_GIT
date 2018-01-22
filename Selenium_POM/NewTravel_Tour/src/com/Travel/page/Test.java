@@ -17,10 +17,13 @@ public class Test {
 		  d.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  d.manage().window().maximize();
 		  d.getCurrentUrl();
+		  String title= d.getTitle();
+		  System.out.println(title);
+		 
 		
-		  d.findElement(By.name("userName")).sendKeys("mercury");
-		  d.findElement(By.name("password")).sendKeys("mercury");
-		  d.findElement(By.name("login")).click();
+		  //d.findElement(By.name("userName")).sendKeys("mercury");
+		  //d.findElement(By.name("password")).sendKeys("mercury");
+		  //d.findElement(By.name("login")).click();
 		
 	}
 

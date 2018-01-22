@@ -24,6 +24,7 @@ public class BaseTest {
 		boolean flag= false;
 		if(driver.getTitle().equalsIgnoreCase(expectedPageTitle)){
 			flag= true;
+			System.out.println("Page Title Match");
 		}
 		Assert.assertTrue(flag, "Page Title not match");
 

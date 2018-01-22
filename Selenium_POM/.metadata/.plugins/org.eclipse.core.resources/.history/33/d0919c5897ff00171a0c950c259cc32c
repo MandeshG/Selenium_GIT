@@ -23,7 +23,7 @@ public class Login {
 		PageFactory.initElements(driver, this);
 	}
 
-	 	public void applicationLogin(String username, String Password) {
+	public void applicationLogin(String username, String Password) {
 		user.sendKeys(username);
 		pass.sendKeys(Password);
 		submit.click();
