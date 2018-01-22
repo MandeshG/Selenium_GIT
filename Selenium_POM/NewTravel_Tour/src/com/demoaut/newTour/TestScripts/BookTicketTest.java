@@ -1,29 +1,16 @@
 package com.demoaut.newTour.TestScripts;
 
-import java.util.concurrent.TimeUnit;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.demount.newtour.Page.*;
 
-public class BookTicketTest {
-	WebDriver driver;
 
-	@BeforeTest
-	public void openBrowser() {
-		driver = new FirefoxDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get("http://newtours.demoaut.com/");
-
-	}
-
+public class BookTicketTest extends BaseTest {
+	
 	@Test
 	public void bookingTest(){
 		Login lp = new Login(driver);
@@ -42,10 +29,5 @@ public class BookTicketTest {
 		Assert.assertEquals(actualMessage, expectedMessage);
 	}
 	
-	@AfterTest
-	public void CloseBrowser() {
-		// TODO Auto-generated method stub
-		driver.close();
-
-	}
+	
 }

@@ -1,0 +1,43 @@
+package com.demoaut.newTour.TestScripts;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.demount.newtour.Page.Login;
+
+public class InvalidUserTest {
+	
+	WebDriver driver;
+	@BeforeTest
+	public void openBrowser() {
+		driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.get("http://newtours.demoaut.com/");
+
+	}
+	
+	@Test
+	public void invalidTest(){
+		Login lp = new Login(driver);
+		lp.applicationLogin("mercury", "password");
+		
+		boolean signOnVisible= driver.findElement(By.linkText("SIGN-ON")).isDisplayed();
+		Assert.assertTrue(signOnVisible);
+	
+	}
+	
+	@AfterTest
+	public void CloseBrowser() {
+		driver.close();
+
+	}
+	
+}

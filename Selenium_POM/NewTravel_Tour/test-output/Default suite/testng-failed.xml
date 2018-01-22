@@ -6,6 +6,7 @@
       <class name="com.demoaut.newTour.TestScripts.BookTicketTest">
         <methods>
           <include name="bookingTest"/>
+          <include name="CloseBrowser"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- com.demoaut.newTour.TestScripts.BookTicketTest -->

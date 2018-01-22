@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16183" started-at="2018-01-22T16:03:14Z" finished-at="2018-01-22T16:03:30Z">
+  <suite name="Default suite" duration-ms="13576" started-at="2018-01-22T16:40:09Z" finished-at="2018-01-22T16:40:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16183" started-at="2018-01-22T16:03:14Z" finished-at="2018-01-22T16:03:30Z">
-      <class name="com.demoaut.newTour.TestScripts.BookTicketTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.BookTicketTest@100955a]" name="openBrowser" is-config="true" duration-ms="7802" started-at="2018-01-22T11:03:14Z" finished-at="2018-01-22T11:03:22Z">
+    <test name="Default test" duration-ms="13576" started-at="2018-01-22T16:40:09Z" finished-at="2018-01-22T16:40:23Z">
+      <class name="com.demoaut.newTour.TestScripts.ValidateUserTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.ValidateUserTest@874448]" name="openBrowser" is-config="true" duration-ms="8605" started-at="2018-01-22T11:40:09Z" finished-at="2018-01-22T11:40:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="bookingTest()[pri:0, instance:com.demoaut.newTour.TestScripts.BookTicketTest@100955a]" name="bookingTest" duration-ms="8304" started-at="2018-01-22T11:03:22Z" finished-at="2018-01-22T11:03:30Z">
+        <test-method status="PASS" signature="userValidation()[pri:0, instance:com.demoaut.newTour.TestScripts.ValidateUserTest@874448]" name="userValidation" duration-ms="4888" started-at="2018-01-22T11:40:18Z" finished-at="2018-01-22T11:40:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookingTest -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.BookTicketTest@100955a]" name="CloseBrowser" is-config="true" duration-ms="54" started-at="2018-01-22T11:03:30Z" finished-at="2018-01-22T11:03:30Z">
+        </test-method> <!-- userValidation -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.ValidateUserTest@874448]" name="CloseBrowser" is-config="true" duration-ms="53" started-at="2018-01-22T11:40:23Z" finished-at="2018-01-22T11:40:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.demoaut.newTour.TestScripts.BookTicketTest -->
+      </class> <!-- com.demoaut.newTour.TestScripts.ValidateUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
