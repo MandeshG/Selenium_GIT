@@ -1,0 +1,18 @@
+package com.Travel.page;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Test {
+	
+	  public static void main(String[] args) {
+		  
+		  WebDriver d;
+		  d= new FirefoxDriver();
+		  d.get("http://newtours.demoaut.com/");
+		  d.manage().window().maximize();
+		  
+		
+	}
+
+}
