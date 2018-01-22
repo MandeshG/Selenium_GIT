@@ -1,0 +1,25 @@
+package com.demount.newtour.Page;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Login {
+
+	// Declaring the Variables
+
+	@FindBy(name = "userName")
+	private WebElement user;
+
+	@FindBy(name = "password")
+	private WebElement pass;
+
+	@FindBy(name = "login")
+	private WebElement submit;
+
+	public void applicationLogin(String username, String Password) {
+		user.sendKeys(username);
+		pass.sendKeys(Password);
+		submit.click();
+	}
+
+}

@@ -1,0 +1,45 @@
+package com.demoaut.newTour.TestScripts;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.demount.newtour.Page.*;
+
+public class BookTicketTest {
+	WebDriver driver;
+	
+	@BeforeTest
+	public void openBrowser(){
+		driver= new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.get("http://newtours.demoaut.com/");
+					
+	}
+	
+	@Test
+	public void bookingTest(){
+		Login lp = new Login(driver);
+		FlightFinder ff= new FlightFinder(driver);
+		SelectFlight sf= new SelectFlight(driver);
+		BookAFlight bf= new BookAFlight(driver);
+		
+		
+		lp.applicationLogin("mercury", "mercury");
+		ff.findFlight();
+		sf.flightSelection();
+		bf.flightBooking("Aaravi", "Giri", "9879721-2-882");
+		
+		
+		
+		
+		
+		
+	}
+	
+
+}
