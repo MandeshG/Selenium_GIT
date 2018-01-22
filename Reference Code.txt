@@ -1,0 +1,168 @@
+com.demount.newtour.Page
+
+public class Login {
+	// Declaring the Variables
+	@FindBy(name = "userName")
+	private WebElement user;
+
+	@FindBy(name = "password")
+	private WebElement pass;
+
+	@FindBy(name = "login")
+	private WebElement submit;
+	
+	public Login(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+
+	public void applicationLogin(String username, String Password) {
+		user.sendKeys(username);
+		pass.sendKeys(Password);
+		submit.click();
+	}
+
+}
+
+public class FlightFinder {
+	
+	@FindBy (css= "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table > tbody > tr:nth-child(9) > td:nth-child(2) > font > font > input[type='radio']:nth-child(2)")
+	private WebElement BusinessClass;
+	@FindBy(name= "airline")
+	private WebElement flight;
+	
+	@FindBy(name ="findFlights")
+	private WebElement submit;
+	
+	public FlightFinder(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+	public void findFlight(){
+		BusinessClass.click();
+		
+		Select dropdown= new Select(flight);
+		dropdown.selectByIndex(2);
+		submit.click();
+		
+	}
+	
+
+public class SelectFlight {
+	
+	@FindBy(css="body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table:nth-child(9) > tbody > tr:nth-child(7) > td.frame_action_xrows > input[type='radio']")
+	private WebElement departure;
+	
+	@FindBy(css= "body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(5) > td > form > table:nth-child(10) > tbody > tr:nth-child(5) > td.frame_action_xrows > input[type='radio']")
+	private WebElement returnFlight;
+	
+	@FindBy(name= "reserveFlights")
+	private WebElement submit;
+	
+	public SelectFlight(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void flightSelection(){
+		departure.click();
+		returnFlight.click();
+		submit.click();
+	}
+	
+}
+
+}
+public class BookAFlight {
+
+	@FindBy(name = "passFirst0")
+	private WebElement firstName;
+
+	@FindBy(name = "passLast0")
+	private WebElement lastName;
+
+	@FindBy(name = "creditnumber")
+	private WebElement creditCardNumber;
+
+	@FindBy(name = "buyFlights")
+	private WebElement submit;
+
+	public BookAFlight(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+	public void flightBooking(String fname, String lname, String cNum) {
+		firstName.sendKeys(fname);
+		lastName.sendKeys(lname);
+		creditCardNumber.sendKeys(cNum);
+		submit.click();
+	}
+
+}
+
+com.demount.newtour.TestCases
+
+public class BaseTest {
+	WebDriver driver;
+	@BeforeTest
+	public void openBrowser() {
+		driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.get("http://newtours.demoaut.com/");
+	}
+	@AfterTest
+	public void CloseBrowser() {
+		driver.close();
+
+	}
+
+}
+public class BookTicketTest extends BaseTest {
+	@Test
+	public void bookingTest(){
+		Login lp = new Login(driver);
+		FlightFinder ff= new FlightFinder(driver);
+		SelectFlight sf= new SelectFlight(driver);
+		BookAFlight bf= new BookAFlight(driver);
+		
+		lp.applicationLogin("mercury", "mercury");
+		ff.findFlight();
+		sf.flightSelection();
+		bf.flightBooking("Aaravi", "Giri", "9879721-2-882");
+		String expectedMessage= "Your itinerary has been booked!";
+		String actualMessage= driver.findElement(By.cssSelector("body > div > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr:nth-child(3) > td > p > font > b > font:nth-child(2)")).getText();
+		Assert.assertEquals(actualMessage, expectedMessage);
+	}
+	
+	
+}
+public class InvalidUserTest extends BaseTest {
+	
+	@Test
+	public void invalidTest(){
+		Login lp = new Login(driver);
+		lp.applicationLogin("mercury", "password");
+		boolean signOnVisible= driver.findElement(By.linkText("SIGN-ON")).isDisplayed();
+		Assert.assertTrue(signOnVisible);
+	
+	}
+	
+	
+	
+}
+
+public class ValidateUserTest extends BaseTest {
+	@Test
+	public void userValidation(){
+		Login lp = new Login(driver);
+		lp.applicationLogin("mercury", "mercury");
+		
+		 boolean signOoffvisible =driver.findElement(By.linkText("SIGN-OFF")).isDisplayed();
+		 Assert.assertTrue(signOoffvisible);
+	}
+	
+	
+
+}
+
+
+
+
+
