@@ -18,6 +18,30 @@ public class FlightFinder_DropdownSelection {
 
 	@FindBy(name = "fromPort")
 	WebElement departure;
+	
+	
+	@FindBy(name = "fromMonth")
+	WebElement Departure_Month;
+	
+	@FindBy(name = "fromDay")
+	WebElement Departure_Date;
+	
+	@FindBy(name = "toPort")
+	WebElement Arrival;
+	
+	@FindBy(name = "toMonth")
+	WebElement R_Month;
+	
+	@FindBy(name = "toDay")
+	WebElement R_Day;
+	
+	@FindBy(name = "airline")
+	WebElement airlines;
+	
+	
+	
+
+	
 
 	public FlightFinder_DropdownSelection(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -47,6 +71,86 @@ public class FlightFinder_DropdownSelection {
 			Random rand = new Random();
 			int dDropdown = rand.nextInt(CC.size());
 			CC.get(dDropdown).click();
+
+		}
+		Select DMonth = new Select(Departure_Month);
+		List<WebElement> AM = DMonth.getOptions();
+		int Asize = AM.size();
+
+		for (int i = 0; i < Asize; i++) {
+			String Month = AM.get(i).getText();
+			System.out.println(Month);
+			Random rand = new Random();
+			int monthDropdown = rand.nextInt(AM.size());
+			AM.get(monthDropdown).click();
+
+		}
+
+		Select DDate = new Select(Departure_Date);
+		List<WebElement> AD = DDate.getOptions();
+		int nSize = AD.size();
+
+		for (int i = 0; i < nSize; i++) {
+			String Day = AD.get(i).getText();
+			System.out.println(Day);
+			Random rand = new Random();
+			int dayCount = rand.nextInt(AD.size());
+			AD.get(dayCount).click();
+		}
+
+		Select AA = new Select(Arrival);
+		List<WebElement> AR = AA.getOptions();
+		int AS = AR.size();
+
+		for (int i = 0; i < AS; i++) {
+			String Arrival_City = AR.get(i).getText();
+			System.out.println(Arrival_City);
+			Random rand = new Random();
+			int City = rand.nextInt(AR.size());
+			AR.get(City).click();
+
+		}
+
+		Select RMonth = new Select(R_Month);
+		List<WebElement> RM = RMonth.getOptions();
+		int rSize = RM.size();
+
+		for (int i = 0; i < rSize; i++) {
+			String rDate = RM.get(i).getText();
+			System.out.println(rDate);
+
+			Random rand = new Random();
+
+			int Select_ADate = rand.nextInt(RM.size());
+			AM.get(Select_ADate).click();
+		}
+
+		Select RDay = new Select(R_Day);
+		List<WebElement> RD = RDay.getOptions();
+		int DayR = RD.size();
+
+		for (int i = 0; i < DayR; i++) {
+			String returnDay = RD.get(i).getText();
+			System.out.println(returnDay);
+
+			Random rd = new Random();
+			int selectionDate = rd.nextInt(RD.size());
+			RD.get(selectionDate).click();
+
+		}
+
+		Select ar = new Select(airlines);
+		List<WebElement> AD1 = ar.getOptions();
+		int AAS = AD1.size();
+
+		for (int i = 0; i < AAS; i++) {
+
+			String select_Airlines = AD1.get(i).getText();
+			System.out.println(select_Airlines);
+
+			Random RT = new Random();
+			int newSelection = RT.nextInt(AD1.size());
+			AD1.get(newSelection).click();
 
 		}
 
