@@ -22,6 +22,9 @@
 		</list>
 	</section>
 	<section name="GitCommitMessageComponent">
+		<list key="M:\Selenium_GIT\.git">
+			<item value="empty"/>
+		</list>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
