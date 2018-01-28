@@ -1,67 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="54279" started-at="2018-01-22T23:36:15Z" finished-at="2018-01-22T23:37:09Z">
+  <suite name="Default suite" duration-ms="56581" started-at="2018-01-28T16:09:22Z" finished-at="2018-01-28T16:10:19Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="54279" started-at="2018-01-22T23:36:15Z" finished-at="2018-01-22T23:37:09Z">
-      <class name="com.demoaut.newTour.TestScripts.InvalidUserTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.InvalidUserTest@1820e51]" name="openBrowser" is-config="true" duration-ms="8121" started-at="2018-01-22T18:36:31Z" finished-at="2018-01-22T18:36:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="invalidTest()[pri:0, instance:com.demoaut.newTour.TestScripts.InvalidUserTest@1820e51]" name="invalidTest" duration-ms="2884" started-at="2018-01-22T18:36:40Z" finished-at="2018-01-22T18:36:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidTest -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.InvalidUserTest@1820e51]" name="CloseBrowser" is-config="true" duration-ms="41" started-at="2018-01-22T18:36:42Z" finished-at="2018-01-22T18:36:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.demoaut.newTour.TestScripts.InvalidUserTest -->
-      <class name="com.demoaut.newTour.TestScripts.ValidateUserTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.ValidateUserTest@d8062c]" name="openBrowser" is-config="true" duration-ms="7999" started-at="2018-01-22T18:36:43Z" finished-at="2018-01-22T18:36:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="userValidation()[pri:0, instance:com.demoaut.newTour.TestScripts.ValidateUserTest@d8062c]" name="userValidation" duration-ms="4569" started-at="2018-01-22T18:36:51Z" finished-at="2018-01-22T18:36:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userValidation -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.ValidateUserTest@d8062c]" name="CloseBrowser" is-config="true" duration-ms="45" started-at="2018-01-22T18:36:55Z" finished-at="2018-01-22T18:36:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.demoaut.newTour.TestScripts.ValidateUserTest -->
+    <test name="Default test" duration-ms="56581" started-at="2018-01-28T16:09:22Z" finished-at="2018-01-28T16:10:19Z">
       <class name="com.demoaut.newTour.TestScripts.BookTicketTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.BookTicketTest@113b13f]" name="openBrowser" is-config="true" duration-ms="7689" started-at="2018-01-22T18:36:15Z" finished-at="2018-01-22T18:36:22Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.BookTicketTest@874448]" name="openBrowser" is-config="true" duration-ms="9725" started-at="2018-01-28T11:09:22Z" finished-at="2018-01-28T11:09:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="bookingTest()[pri:0, instance:com.demoaut.newTour.TestScripts.BookTicketTest@113b13f]" name="bookingTest" duration-ms="9117" started-at="2018-01-22T18:36:22Z" finished-at="2018-01-22T18:36:31Z">
+        <test-method status="PASS" signature="bookingTest()[pri:0, instance:com.demoaut.newTour.TestScripts.BookTicketTest@874448]" name="bookingTest" duration-ms="46742" started-at="2018-01-28T11:09:32Z" finished-at="2018-01-28T11:10:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookingTest -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.BookTicketTest@113b13f]" name="CloseBrowser" is-config="true" duration-ms="70" started-at="2018-01-22T18:36:31Z" finished-at="2018-01-22T18:36:31Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.BookTicketTest@874448]" name="CloseBrowser" is-config="true" duration-ms="91" started-at="2018-01-28T11:10:19Z" finished-at="2018-01-28T11:10:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.demoaut.newTour.TestScripts.BookTicketTest -->
-      <class name="com.demoaut.newTour.TestScripts.Register_TestCase">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.Register_TestCase@43cd28]" name="openBrowser" is-config="true" duration-ms="8473" started-at="2018-01-22T18:36:55Z" finished-at="2018-01-22T18:37:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="RegisterUser()[pri:0, instance:com.demoaut.newTour.TestScripts.Register_TestCase@43cd28]" name="RegisterUser" duration-ms="5184" started-at="2018-01-22T18:37:04Z" finished-at="2018-01-22T18:37:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RegisterUser -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.Register_TestCase@43cd28]" name="CloseBrowser" is-config="true" duration-ms="54" started-at="2018-01-22T18:37:09Z" finished-at="2018-01-22T18:37:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.demoaut.newTour.TestScripts.Register_TestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
