@@ -14,14 +14,14 @@ public class BookTicketTest extends BaseTest {
 	@Test
 	public void bookingTest(){
 		Login lp = new Login(driver);
-		//FlightFinder_DropdownSelection fd= new FlightFinder_DropdownSelection(driver);
+		FlightFinder_DropdownSelection fd= new FlightFinder_DropdownSelection(driver);
 		FlightFinder ff= new FlightFinder(driver);
 		SelectFlight sf= new SelectFlight(driver);
 		BookAFlight bf= new BookAFlight(driver);
 		
 		
 		lp.applicationLogin("mercury", "mercury");
-		//fd.Passengerdropdown();
+		fd.Passengerdropdown();
 		ff.findFlight();
 		sf.flightSelection();
 		bf.flightBooking("Aaravi", "Giri", "9879721-2-882");

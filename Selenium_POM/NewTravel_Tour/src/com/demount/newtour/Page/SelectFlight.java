@@ -17,8 +17,7 @@ public class SelectFlight {
 	@FindBy(name= "reserveFlights")
 	private WebElement submit;
 	
-	
-	
+
 	public SelectFlight(WebDriver driver){
 		PageFactory.initElements(driver, this);
 	}
