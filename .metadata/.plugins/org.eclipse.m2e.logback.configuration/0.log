@@ -298,3 +298,22 @@
 2018-01-21 15:04:01,292 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\aaravi\src\main\resources
 2018-01-21 15:04:01,293 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-01-21 15:04:01,293 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\aaravi\src\test\resources
+2018-01-28 13:04:02,579 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: mavenPackage:MavenProject:0.0.1-SNAPSHOT @ M:\Selenium_GIT\Selenium_Workspace\MavenProject\pom.xml.
+2018-01-28 13:04:02,579 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: NewTourDemo:aaravi:0.0.1-SNAPSHOT @ M:\Selenium_GIT\Selenium_Workspace\aaravi\pom.xml.
+2018-01-28 13:04:06,747 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-28 13:04:06,749 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\MavenProject\src\main\resources
+2018-01-28 13:04:06,752 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-28 13:04:06,753 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\MavenProject\src\test\resources
+2018-01-28 13:04:08,163 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-28 13:04:08,163 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\MavenProject\src\main\resources
+2018-01-28 13:04:08,165 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-28 13:04:08,165 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\MavenProject\src\test\resources
+2018-01-28 13:04:08,376 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: NewTourDemo:aaravi:0.0.1-SNAPSHOT @ M:\Selenium_GIT\Selenium_Workspace\aaravi\pom.xml.
+2018-01-28 13:04:10,266 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-01-28 13:04:10,267 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\aaravi\src\main\resources
+2018-01-28 13:04:10,268 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-01-28 13:04:10,269 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\aaravi\src\test\resources
+2018-01-28 13:04:53,073 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-28 13:04:53,076 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\MavenProject\src\main\resources
+2018-01-28 13:04:53,078 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-28 13:04:53,079 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory M:\Selenium_GIT\Selenium_Workspace\MavenProject\src\test\resources
