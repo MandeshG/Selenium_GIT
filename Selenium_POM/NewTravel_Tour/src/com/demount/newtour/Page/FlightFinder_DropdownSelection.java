@@ -18,30 +18,24 @@ public class FlightFinder_DropdownSelection {
 
 	@FindBy(name = "fromPort")
 	WebElement departure;
-	
-	
+
 	@FindBy(name = "fromMonth")
 	WebElement Departure_Month;
-	
+
 	@FindBy(name = "fromDay")
 	WebElement Departure_Date;
-	
+
 	@FindBy(name = "toPort")
 	WebElement Arrival;
-	
+
 	@FindBy(name = "toMonth")
 	WebElement R_Month;
-	
+
 	@FindBy(name = "toDay")
 	WebElement R_Day;
-	
+
 	@FindBy(name = "airline")
 	WebElement airlines;
-	
-	
-	
-
-	
 
 	public FlightFinder_DropdownSelection(WebDriver driver) {
 		PageFactory.initElements(driver, this);

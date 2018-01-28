@@ -82,7 +82,7 @@ public class Register_Page {
 		
 	}
 public void UserInfo(){
-	username.sendKeys("Aaravi");
+	username.sendKeys("Madhu");
 	Password.sendKeys("Mandesh");
 	Confirm.sendKeys("Mandesh");
 	
