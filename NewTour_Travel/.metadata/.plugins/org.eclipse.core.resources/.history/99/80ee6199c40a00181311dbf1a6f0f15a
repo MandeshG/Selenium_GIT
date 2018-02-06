@@ -1,0 +1,5 @@
+package com.TestComplete.TestCase;
+
+public class OrderDetails {
+
+}

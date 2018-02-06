@@ -1,0 +1,29 @@
+package com.TestComplete.TestCase;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+import com.TestComplete.Page.LoginPage;
+
+
+
+public class Validate_LoginPage extends Base_Test{
+	
+	
+	@Test
+	public void loginValidation(){
+		LoginPage ll= new LoginPage(driver);
+		ll.loginApplication("Tester", "test");
+		
+		String Expected= "In order to log in Orders sample use the following information:";
+		String actualMessage=  driver.findElement(By.cssSelector("#aspnetForm > div.login > p:nth-child(9)")).getText();
+		Assert.assertEquals(Expected,actualMessage);
+	
+		
+		
+		
+		
+	}
+	
+
+}

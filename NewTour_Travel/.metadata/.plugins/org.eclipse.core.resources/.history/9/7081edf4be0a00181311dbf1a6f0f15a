@@ -1,0 +1,28 @@
+package com.TestComplete.Page;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Order_Page {
+	
+	@FindBy(xpath= ".//*[@id='ctl00_menu']/li[1]/a")
+	WebElement ViewAllOrder;
+	
+	@FindBy(xpath= ".//*[@id='ctl00_menu']/li[2]/a")
+	WebElement ViewAllProducts;
+	
+	@FindBy(xpath= ".//*[@id='ctl00_menu']/li[3]/a")
+	WebElement Order;
+	
+	@FindBy(name= "ctl00_MainContent_btnCheckAll")
+	WebElement CheckAll;
+	
+	@FindBy(name= "ctl00_MainContent_btnUncheckAll")
+	WebElement UnCheckAll;
+	
+	@FindBy(name= "ctl00$MainContent$btnDelete")
+	WebElement Deselect;
+	
+
+
+}

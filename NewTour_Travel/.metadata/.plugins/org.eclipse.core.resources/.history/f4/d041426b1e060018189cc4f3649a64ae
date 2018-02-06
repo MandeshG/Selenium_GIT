@@ -1,0 +1,5 @@
+package com.TestComplete.Page;
+
+public class LoginPage {
+
+}

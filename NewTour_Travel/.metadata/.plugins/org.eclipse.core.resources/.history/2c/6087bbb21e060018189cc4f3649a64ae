@@ -1,0 +1,25 @@
+package com.TestComplete.Page;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage {
+	
+	@FindBy(name= "ctl00$MainContent$username")
+	WebElement Username;
+	
+	@FindBy(name="ctl00$MainContent$password")
+	WebElement Password;
+	
+	@FindBy(name="ctl00$MainContent$login_button")
+	WebElement Submit;
+	
+	
+	public void loginApplication(String uID, String pwd){
+		Username.sendKeys(uID);
+		Password.sendKeys(pwd);
+		
+		
+	}
+
+}

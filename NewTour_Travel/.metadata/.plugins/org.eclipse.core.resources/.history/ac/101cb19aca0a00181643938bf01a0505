@@ -1,0 +1,65 @@
+package com.TestComplete.Page;
+
+import java.util.List;
+import java.util.Random;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class Order {
+
+	@FindBy(xpath = ".//*[@id='ctl00_menu']/li[3]/a")
+	WebElement Order;
+
+	@FindBy(name = "ctl00$MainContent$fmwOrder$ddlProduct")
+	WebElement Product;
+
+	@FindBy(xpath = ".//*[@id='ctl00_MainContent_fmwOrder_txtQuantity']")
+	WebElement Quantity;
+
+	@FindBy(xpath = ".//*[@id='ctl00_MainContent_fmwOrder_txtUnitPrice']")
+	WebElement Price;
+
+	@FindBy(xpath = ".//*[@id='ctl00_MainContent_fmwOrder_txtDiscount']")
+	WebElement Discount;
+
+	@FindBy(name = "ctl00$MainContent$fmwOrder$txtTotal")
+	WebElement Total;
+
+	@FindBy(xpath = ".//*[@id='ctl00_MainContent_fmwOrder']/tbody/tr/td/ol[1]/li[5]/input[2]")
+	WebElement Calculate;
+	
+	
+	
+	public Order(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+
+	public void ProductInfo() {
+
+		Order.click();
+		Random rr = new Random();
+
+		
+		Select PP = new Select(Product);
+		List<WebElement> Count = PP.getOptions();
+		int size = Count.size();
+		for (int i = 0; i < size; i++) {
+			String value = Count.get(i).getText();
+			System.out.println(value);
+			int dropdown = rr.nextInt(Count.size());
+			Count.get(dropdown).click();
+		}
+		
+		Quantity.sendKeys("30");
+		Price.sendKeys("100");
+		Discount.sendKeys("5");
+
+
+	}
+
+}

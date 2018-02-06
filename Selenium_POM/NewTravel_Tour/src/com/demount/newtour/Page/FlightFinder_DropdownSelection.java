@@ -10,7 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class FlightFinder_DropdownSelection {
-
 	Random rand = new Random();
 
 	@FindBy(name = "passCount")
@@ -61,8 +60,7 @@ public class FlightFinder_DropdownSelection {
 		for (int j = 0; j < Dsize; j++) {
 			String dvalue = CC.get(j).getText();
 			System.out.println(dvalue);
-
-			Random rand = new Random();
+			
 			int dDropdown = rand.nextInt(CC.size());
 			CC.get(dDropdown).click();
 
@@ -74,7 +72,7 @@ public class FlightFinder_DropdownSelection {
 		for (int i = 0; i < Asize; i++) {
 			String Month = AM.get(i).getText();
 			System.out.println(Month);
-			Random rand = new Random();
+			
 			int monthDropdown = rand.nextInt(AM.size());
 			AM.get(monthDropdown).click();
 
@@ -87,7 +85,6 @@ public class FlightFinder_DropdownSelection {
 		for (int i = 0; i < nSize; i++) {
 			String Day = AD.get(i).getText();
 			System.out.println(Day);
-			Random rand = new Random();
 			int dayCount = rand.nextInt(AD.size());
 			AD.get(dayCount).click();
 		}
@@ -99,7 +96,7 @@ public class FlightFinder_DropdownSelection {
 		for (int i = 0; i < AS; i++) {
 			String Arrival_City = AR.get(i).getText();
 			System.out.println(Arrival_City);
-			Random rand = new Random();
+			
 			int City = rand.nextInt(AR.size());
 			AR.get(City).click();
 
@@ -113,8 +110,6 @@ public class FlightFinder_DropdownSelection {
 			String rDate = RM.get(i).getText();
 			System.out.println(rDate);
 
-			Random rand = new Random();
-
 			int Select_ADate = rand.nextInt(RM.size());
 			AM.get(Select_ADate).click();
 		}
@@ -127,8 +122,7 @@ public class FlightFinder_DropdownSelection {
 			String returnDay = RD.get(i).getText();
 			System.out.println(returnDay);
 
-			Random rd = new Random();
-			int selectionDate = rd.nextInt(RD.size());
+			int selectionDate = rand.nextInt(RD.size());
 			RD.get(selectionDate).click();
 
 		}
@@ -142,8 +136,7 @@ public class FlightFinder_DropdownSelection {
 			String select_Airlines = AD1.get(i).getText();
 			System.out.println(select_Airlines);
 
-			Random RT = new Random();
-			int newSelection = RT.nextInt(AD1.size());
+			int newSelection = rand.nextInt(AD1.size());
 			AD1.get(newSelection).click();
 
 		}

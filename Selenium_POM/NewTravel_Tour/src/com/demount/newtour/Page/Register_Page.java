@@ -1,5 +1,9 @@
 package com.demount.newtour.Page;
 
+
+import java.util.List;
+import java.util.Random;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -71,14 +75,24 @@ public class Register_Page {
 	}
 	
 	public void mailing(){
+		
+		Random rand= new Random();
 		Address.sendKeys("12356 Gaithersburg");
 		City.sendKeys("FlowerHill");
 		State.sendKeys("MD");
 		PostalCode.sendKeys("25652");
 		
 		Select dropdown= new Select(Country);
-		dropdown.selectByIndex(10);
-	
+		//dropdown.selectByIndex(10);
+		List<WebElement>CC=dropdown.getOptions();
+		int size= CC.size();
+			
+	for (int i = 0; i < size; i++) {
+		String value = CC.get(i).getText();
+		System.out.println(value);
+		int dCC = rand.nextInt(CC.size());
+		CC.get(dCC).click();
+	}
 		
 	}
 public void UserInfo(){

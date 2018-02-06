@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12357" started-at="2018-01-28T19:58:41Z" finished-at="2018-01-28T19:58:53Z">
+  <suite name="Default suite" duration-ms="191734" started-at="2018-01-28T20:13:33Z" finished-at="2018-01-28T20:16:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12357" started-at="2018-01-28T19:58:41Z" finished-at="2018-01-28T19:58:53Z">
+    <test name="Default test" duration-ms="191734" started-at="2018-01-28T20:13:33Z" finished-at="2018-01-28T20:16:44Z">
       <class name="com.demoaut.newTour.TestScripts.Register_TestCase">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.Register_TestCase@874448]" name="openBrowser" is-config="true" duration-ms="7177" started-at="2018-01-28T14:58:41Z" finished-at="2018-01-28T14:58:48Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.Register_TestCase@874448]" name="openBrowser" is-config="true" duration-ms="13113" started-at="2018-01-28T15:13:33Z" finished-at="2018-01-28T15:13:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="RegisterUser()[pri:0, instance:com.demoaut.newTour.TestScripts.Register_TestCase@874448]" name="RegisterUser" duration-ms="5110" started-at="2018-01-28T14:58:48Z" finished-at="2018-01-28T14:58:53Z">
+        <test-method status="PASS" signature="RegisterUser()[pri:0, instance:com.demoaut.newTour.TestScripts.Register_TestCase@874448]" name="RegisterUser" duration-ms="178414" started-at="2018-01-28T15:13:46Z" finished-at="2018-01-28T15:16:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUser -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.Register_TestCase@874448]" name="CloseBrowser" is-config="true" duration-ms="47" started-at="2018-01-28T14:58:53Z" finished-at="2018-01-28T14:58:53Z">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.demoaut.newTour.TestScripts.Register_TestCase@874448]" name="CloseBrowser" is-config="true" duration-ms="182" started-at="2018-01-28T15:16:44Z" finished-at="2018-01-28T15:16:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

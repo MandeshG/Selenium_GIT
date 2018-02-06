@@ -1,0 +1,36 @@
+package com.TestComplete.TestCase;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+public class Base_Test {
+	
+	WebDriver driver;
+	
+	@BeforeClass
+	public void Launch_Browser(){
+		
+		System.setProperty("webdriver.chrome.driver", "M:\\Selenium Notes\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		String url= "http://support.smartbear.com/samples/testcomplete12/weborders/";
+		driver.get(url);
+		String Expected= "In order to log in Orders sample use the following information:";
+		String actualMessage=  driver.findElement(By.cssSelector("#aspnetForm > div.login > p:nth-child(9)")).getText();
+		Assert.assertEquals(Expected,actualMessage);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+	}
+	/*
+	@AfterClass
+	public void Close_Browser(){
+		driver.close();
+	}
+*/
+}
